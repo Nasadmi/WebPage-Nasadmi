@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New's</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!--AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div>
+        <header>
+            <h1>New's</h1>
+        </header>
+    </div>
+    <div class="nav-brand">
+        <nav>
+            <ul class="ul-brand ul-left ul-li">
+                <li>
+                    <a href="#technology">Technology</a>
+                </li>
+                <li>
+                    <a href="#world">World</a>
+                </li>
+                <li>
+                    <a href="#biology">Biology</a>
+                </li>
+                <li>
+                    <a href="#scientist">Scientist</a>
+                </li>
+            </ul>
+            <ul class="ul-brand ul-right">
+                <li>
+                    <div>
+                        <button class="btn" id="arrow-down" onclick="show()">
+                            <a href="#" id="more-a">More</a>
+                            <span><i class="fas fa-arrow-down arrow"></i></span>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+            <span class="clearfix"></span>
+            <div id="hide">
+                <ul class="extension-more">
+                    <li>
+                        <a href="#" class="extension-a">About us</a>
+                    </li>
+                    <span class="clearfix"></span>
+                    <li class="fa-more">
+                        <div  onclick="hide()">
+                            <span><i class="fas fa-arrow-up arrow-up"></i></span>
+                        </div> 
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <hr class="separator">
+    <script src="javascript/main.js"></script>
+    <div class="container">
+        <section>
+            <article id="technology">
+                <h2 class="subtitle-container">Technology</h2>
+                <p class="text-container">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quidem commodi laudantium unde sint, maxime numquam tempore et, officia itaque deleniti velit. Et maiores aperiam adipisci neque obcaecati vero molestias!
+                </p>
+                <span class="desplaze-container" onclick="showtechnology()"><i class="fas fa-arrow-down arrow-container"></i></span>
+                <span class="desplaze-container left" onclick="hidetechnology()"><i class="fas fa-arrow-up arrow-container"></i></span>
+            </article>
+            <article id="world">
+                <h2 class="subtitle-container">World</h2>
+                <p class="text-container">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quidem commodi laudantium unde sint, maxime numquam tempore et, officia itaque deleniti velit. Et maiores aperiam adipisci neque obcaecati vero molestias!
+                </p>
+                <span class="desplaze-container" onclick="showbiology()"><i class="fas fa-arrow-down arrow-container"></i></span>
+                <span class="desplaze-container left" onclick="hidebiology()"><i class="fas fa-arrow-up arrow-container"></i></span>
+            </article>
+            <article id="biology">
+                <h2 class="subtitle-container">Biology</h2>
+                <p class="text-container">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quidem commodi laudantium unde sint, maxime numquam tempore et, officia itaque deleniti velit. Et maiores aperiam adipisci neque obcaecati vero molestias!
+                </p>
+                <span class="desplaze-container" onclick="showscientist()"><i class="fas fa-arrow-down arrow-container"></i></span>
+                <span class="desplaze-container left" onclick="hidescientist()"><i class="fas fa-arrow-up arrow-container"></i></span>
+            </article>
+            <article id="scientist">
+                <h2 class="subtitle-container">Scientist</h2>
+                <p class="text-container">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quidem commodi laudantium unde sint, maxime numquam tempore et, officia itaque deleniti velit. Et maiores aperiam adipisci neque obcaecati vero molestias!
+                </p>
+                <span class="desplaze-container left" onclick="hidescientist()"><i class="fas fa-arrow-up arrow-container"></i></span>
+            </article>
+        </section>
+    </div>
+</body>
+</html>
